@@ -13,9 +13,17 @@ public class SoftwareTicket extends Ticket {
         this.affectsLogin = affectsLogin;
     }
 
-    public String getSystem() { return system; }
-    public boolean isSecurityIssue() { return securityIssue; }
-    public boolean isAffectsLogin() { return affectsLogin; }
+    public String getSystem() {
+        return system;
+    }
+
+    public boolean isSecurityIssue() {
+        return securityIssue;
+    }
+
+    public boolean isAffectsLogin() {
+        return affectsLogin;
+    }
 
     // -----------------------------------------
     // TODO #3 (Inheritance)
@@ -42,3 +50,4 @@ public class SoftwareTicket extends Ticket {
         }
         return score;
     }
+}
